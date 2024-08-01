@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Age Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="title">Advanced Age Calculator</h1>
+            <form id="ageForm">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label for="birthdate">Date of Birth</label>
+                    <input type="date" id="birthdate" required>
+                </div>
+                <div class="input-group">
+                    <label for="profilePic">Profile Picture</label>
+                    <input type="file" id="profilePic" accept="image/*">
+                </div>
+                <button type="submit" class="btn">Calculate Age</button>
+                <button type="button" id="clearBtn" class="btn">Clear</button>
+                <button type="button" id="saveBtn" class="btn">Save</button>
+                <button type="button" id="loadBtn" class="btn">Load</button>
+            </form>
+            <div id="loadingSpinner" class="spinner"></div>
+            <div id="results" class="results">
+                <h2 id="greeting"></h2>
+                <img id="profileImage" class="profile-image" alt="Profile Image">
+                <div id="result"></div>
+                <div id="additionalResults"></div>
+                <div id="animeCharacter" class="anime-character"></div>
+            </div>
+            <button id="themeSwitcher" class="btn">Switch Theme</button>
+            <button id="musicToggle" class="btn">Toggle Music</button>
+        </div>
+    </div>
+    <audio id="backgroundMusic" src="7.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
